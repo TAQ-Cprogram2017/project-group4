@@ -85,3 +85,9 @@ void moveimg(IMAGE img1,player* head,int steps)//img1是要移动的图片
 		head = head->next;
 	}
 }
+void CharToTchar(const char * _char, TCHAR * tchar)
+{
+	int iLength;
+	iLength = MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, NULL, 0);
+	MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, tchar, iLength);
+}
