@@ -29,5 +29,99 @@
     <ClInclude Include="extra.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bgp51.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bomb.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\3.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="img1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="hpup.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="start.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="satan.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="end1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="revive.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="victory.jpeg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="defeat.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="hero never die.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="boom.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="bgp11.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="meetsatan.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="angel.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="bomb.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="hpup.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="money.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="victory.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="youhavebeenslain.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="Heroes never die.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="BGM.mp3" />
+    <Media Include="BGM (2).mp3" />
+    <Media Include="Lucian.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="angel.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img1.bin">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -23,6 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>大富翁最终版</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>the adventure of billionaire(final version)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -30,6 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -83,11 +85,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,6 +151,44 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="extra.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="angel.jpg" />
+    <Image Include="bgp11.jpg" />
+    <Image Include="boom.jpg" />
+    <Image Include="defeat.jpg" />
+    <Image Include="end1.jpg" />
+    <Image Include="hero never die.jpg" />
+    <Image Include="hpup.jpg" />
+    <Image Include="img1.jpg" />
+    <Image Include="meetsatan.jpg" />
+    <Image Include="res\1.jpg" />
+    <Image Include="res\3.jpg" />
+    <Image Include="res\bgp51.jpg" />
+    <Image Include="res\bomb.jpg" />
+    <Image Include="revive.jpg" />
+    <Image Include="satan.jpg" />
+    <Image Include="start.jpg" />
+    <Image Include="victory.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="angel.wav" />
+    <Media Include="BGM (2).mp3" />
+    <Media Include="BGM.mp3" />
+    <Media Include="bomb.wav" />
+    <Media Include="Heroes never die.wav" />
+    <Media Include="hpup.wav" />
+    <Media Include="Lucian.wav" />
+    <Media Include="money.wav" />
+    <Media Include="victory.wav" />
+    <Media Include="youhavebeenslain.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img1.bin" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
