@@ -234,3 +234,16 @@ bool ExtractResource(LPCTSTR strDstFile, LPCTSTR strResType, LPCTSTR strResName)
 
 	return true;
 }
+void CharToTchar(const char * _char, TCHAR * tchar)//实现char转换为TCHAR
+{
+	int iLength;
+	iLength = MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, NULL, 0);
+	MultiByteToWideChar(CP_ACP, 0, _char, strlen(_char) + 1, tchar, iLength);
+}
+int random(int x)//随机数生成函数
+{
+	int number;//variable for the random number
+			   //use time function to form the random number
+	number = 1 + rand() % x;  //make the random number from 1 to 6
+	return number;
+}
